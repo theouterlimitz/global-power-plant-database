@@ -1,0 +1,110 @@
+<h1
+id="capstone-project-analyzing-water-risk-exposure-of-global-power-plant-infrastructure">Capstone
+Project: Analyzing Water Risk Exposure of Global Power Plant
+Infrastructure</h1>
+<h2 id="project-overview">Project Overview</h2>
+<p>This repository hosts the work for my Data Science Capstone project.
+The primary goal of this project is to analyze the exposure of global
+power plant infrastructure to current and future water-related risks.
+This involves integrating detailed data on power plants worldwide with
+comprehensive water risk indicators to identify potential
+vulnerabilities and highlight areas of concern at the intersection of
+energy production and water scarcity.</p>
+<p>This repository is a fork of the World Resources Institute’s (WRI) <a
+href="https://github.com/wri/global-power-plant-database">Global Power
+Plant Database</a>.</p>
+<h2 id="purpose-of-this-fork">Purpose of this Fork</h2>
+<p>This fork serves as the central workspace for: * Data curation and
+preprocessing scripts. * Exploratory data analysis (EDA) notebooks. *
+Project documentation and deliverables. * Storing any developed models
+or dashboards (or links to them).</p>
+<h2 id="key-research-questions-tentative">Key Research Questions
+(Tentative)</h2>
+<ul>
+<li>What is the current level of water stress and other water risks
+faced by different types of power plants globally and in specific
+regions?</li>
+<li>How might these water risks change for existing power infrastructure
+under various future climate and socioeconomic scenarios (e.g., 2030,
+2050, 2080)?</li>
+<li>Are there particular types of power plants or geographical regions
+that are disproportionately vulnerable to water scarcity?</li>
+<li>What are the potential implications of these water risks for energy
+security and sustainable development?</li>
+</ul>
+<h2 id="datasets-used">Datasets Used</h2>
+<ol type="1">
+<li><strong>WRI Global Power Plant Database:</strong> This comprehensive
+database provides locations, capacities, fuel types, commissioning
+years, and other information for tens of thousands of power plants
+worldwide. (Forked from <a
+href="https://github.com/wri/global-power-plant-database">wri/global-power-plant-database</a>)</li>
+<li><strong>WRI Aqueduct 4.0 Water Risk Atlas:</strong> This dataset
+provides detailed global water risk indicators, including:
+<ul>
+<li>Baseline water stress, water depletion, inter-annual variability,
+and seasonal variability (both monthly and annualized).</li>
+<li>Future projections of these water risks under different climate
+scenarios (e.g., SSPs/RCPs) and for various time horizons (e.g., 2030,
+2050, 2080).</li>
+</ul></li>
+</ol>
+<h2 id="methodology-tools">Methodology &amp; Tools</h2>
+<p>The project will involve the following general steps:</p>
+<ol type="1">
+<li><strong>Data Acquisition and Preprocessing:</strong>
+<ul>
+<li>Cleaning and preparing the Global Power Plant Database.</li>
+<li>Processing and understanding the Aqueduct 4.0 water risk data
+(baseline and future projections).</li>
+<li>Geospatially linking power plant locations (latitude/longitude) to
+the relevant water basin identifiers (<code>pfaf_id</code>) from the
+Aqueduct dataset. This will likely involve using Pfafstetter basin
+shapefiles.</li>
+<li>Merging the power plant data with the water risk indicators.</li>
+</ul></li>
+<li><strong>Exploratory Data Analysis (EDA):</strong></li>
+</ol>
+<h2 id="installation">Installation</h2>
+<p>To set up the project, clone the repository and install the required
+dependencies:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/your-username/your-repository-name.git</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> your-repository-name</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span></code></pre></div>
+<h2 id="project-structure">Project Structure</h2>
+<ul>
+<li><code>build_databases/</code>: Scripts to build the power plant
+databases from raw source files.</li>
+<li><code>output_database/</code>: The final global power plant database
+CSV and summary files.</li>
+<li><code>raw_source_files/</code>: Raw data files from various
+sources.</li>
+<li><code>resources/</code>: Supporting CSV files, thesauri, and
+concordance lists.</li>
+<li><code>utils/</code>: Utility scripts for various tasks like
+coordinate assembly, country checking, etc.</li>
+<li><code>*.ipynb</code>: Jupyter notebooks for data curation and
+exploratory data analysis.</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<p>Detailed usage instructions and examples will be provided for
+specific scripts and notebooks.</p>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions are welcome! Please see our <a
+href=".github/CONTRIBUTING.md">Contributing Guidelines</a> for more
+details on how to submit pull requests, report issues, and suggest
+improvements.</p>
+<h2 id="license">License</h2>
+<p>This project is licensed under the MIT License. See the
+<code>LICENSE</code> file for more details (if one exists, otherwise we
+can create a standard MIT License text).</p>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>This project utilizes the Global Power Plant Database, a product of
+the World Resources Institute (WRI). We are grateful for their efforts
+in compiling and sharing this valuable dataset.</p>
+<h2 id="contact-and-citation">Contact and Citation</h2>
+<p>For questions about this project, please contact [Your Name/Email or
+Project Email].</p>
+<p>If you use this work in your research, please cite it as follows:
+[Placeholder for citation format]</p>
