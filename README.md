@@ -6,35 +6,39 @@ This repository hosts the work for my Data Science Capstone project. The primary
 
 This repository is a fork of the World Resources Institute's (WRI) [Global Power Plant Database](https://github.com/wri/global-power-plant-database).
 
-## Purpose of this Fork
+## Project Status (As of June 2025)
 
-This fork serves as the central workspace for:
-* Data curation and preprocessing scripts.
-* Exploratory data analysis (EDA) notebooks.
-* Project documentation and deliverables.
-* Storing any developed models or dashboards (or links to them).
+* [x] **Project Description & Scoping:** Complete & Submitted
+* [x] **Data Curation:** Complete & Submitted
+* [ ] **Exploratory Data Analysis (EDA) Deliverable:** In Progress
+* [ ] **Datafolio & Dashboard:** In Progress
+* [ ] **Final Report:** Not Started
 
-## Key Research Questions (Tentative)
+## Key Findings from Exploratory Data Analysis
 
-* What is the current level of water stress and other water risks faced by different types of power plants globally and in specific regions?
-* How might these water risks change for existing power infrastructure under various future climate and socioeconomic scenarios (e.g., 2030, 2050, 2080)?
-* Are there particular types of power plants or geographical regions that are disproportionately vulnerable to water scarcity?
-* What are the potential implications of these water risks for energy security and sustainable development?
+Our analysis has uncovered several key insights into the water risk faced by the global power fleet:
+
+1.  **Risk Varies by Fuel Type:** Thermal fossil fuels (Coal, Gas, Oil) and Solar power plants have the highest average baseline water stress scores. Wind power has the lowest risk profile, while Hydropower's risk is more moderately distributed.
+2.  **Risk is Geographically Concentrated:** The highest-risk power plants are not evenly distributed but are concentrated in major global hotspots, including India, Northern China, the Middle East, and North Africa.
+3.  **Future Risk is Scenario-Dependent:** The future risk profile changes dramatically based on the climate and socioeconomic pathway. A "Pessimistic" 2050 scenario shows a significant increase in the total power capacity under "Extremely High" stress, while an "Optimistic" scenario shows a tangible reduction in risk.
 
 ## Datasets Used
 
-1.  **WRI Global Power Plant Database:** This comprehensive database provides locations, capacities, fuel types, commissioning years, and other information for tens of thousands of power plants worldwide. (Forked from [wri/global-power-plant-database](https://github.com/wri/global-power-plant-database))
-2.  **WRI Aqueduct 4.0 Water Risk Atlas:** This dataset provides detailed global water risk indicators, including:
-    * Baseline water stress, water depletion, inter-annual variability, and seasonal variability (both monthly and annualized).
-    * Future projections of these water risks under different climate scenarios (e.g., SSPs/RCPs) and for various time horizons (e.g., 2030, 2050, 2080).
+1.  **WRI Global Power Plant Database (GPPD):** This database provides locations, capacities, fuel types, and other attributes for ~35,000 power plants worldwide.
+2.  **WRI Aqueduct 4.0 Water Risk Atlas:** This dataset provides detailed global water risk indicators at the hydrological basin level, including baseline historical trends and future projections under three different climate scenarios.
+3.  **HydroBASINS Level 6:** Geospatial data used to link power plant locations to their corresponding water basins.
 
 ## Methodology & Tools
 
-The project will involve the following general steps:
+The project followed a structured data analysis workflow within a Python environment.
 
-1.  **Data Acquisition and Preprocessing:**
-    * Cleaning and preparing the Global Power Plant Database.
-    * Processing and understanding the Aqueduct 4.0 water risk data (baseline and future projections).
-    * Geospatially linking power plant locations (latitude/longitude) to the relevant water basin identifiers (`pfaf_id`) from the Aqueduct dataset. This will likely involve using Pfafstetter basin shapefiles.
-    * Merging the power plant data with the water risk indicators.
-2.  **Exploratory Data Analysis (EDA):**
+1.  **Data Curation:** Raw data from all sources was loaded, cleaned, and merged. Key steps included handling special numeric codes, remediating data anomalies, performing a geospatial join using `GeoPandas`, and performing attribute joins. The final, cleaned, and merged dataset was saved to `analytical_data.pkl` to streamline all subsequent analysis.
+
+2.  **Exploratory Data Analysis (EDA):** Insights were generated using `pandas`, `matplotlib`, and `seaborn`. This involved creating visualizations to understand risk distribution by fuel type, geography, and across future scenarios.
+
+3.  **Dashboarding:** An interactive dashboard was built using [Looker Studio](https://lookerstudio.google.com/reporting/db75b288-9c6b-4b15-8dd8-f35e03fd3b10) to present the key findings. This involved connecting a prepared CSV file and building several charts, maps, KPIs, and filters.
+
+## Repository Contents
+
+* **/deliverables/**: Contains the `.ipynb` notebook files for the Data Curation and EDA deliverables.
+* **Final Interactive Dashboard:** [View the Dashboard on Looker Studio](https://lookerstudio.google.com/reporting/db75b288-9c6b-4b15-8dd8-f35e03fd3b10)
