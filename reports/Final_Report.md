@@ -30,19 +30,23 @@ The EDA phase focused on answering key questions about the distribution and natu
 
 * **Insight 1: A significant portion of global power capacity is exposed to elevated water stress.**
     * A bar chart visualizing the total capacity (MW) by baseline water stress category revealed that the "Medium-High," "High," and "Extremely High" categories combined represent a critical portion of global infrastructure.
-    * *[Image of Bar Chart: Total Capacity by Water Stress Level]*
+  
+      *![A bar chart comparing different fuel types and their water risks](images/total_capacity_by_stress.png)*
 
 * **Insight 2: Water stress exposure varies significantly by primary fuel type.**
     * A box plot analysis showed that thermal fossil fuels have the highest risk profiles. Coal, Gas, and Oil plants have high median water stress scores. In contrast, Wind power has a very low median stress score.
-    * *[Image of Box Plot: Average Water Stress Score by Primary Fuel Type]*
+      
+     *![A bar chart comparing different fuel types and their water risks](images/chart1.png)*
 
 * **Insight 3: The highest-risk zones are dominated by Coal and Gas.**
     * A stacked bar chart confirmed the previous insight, showing that as water stress levels increase, the energy generation mix becomes overwhelmingly dominated by Coal and Gas plants. This highlights the critical nexus between water-intensive energy types and high-risk geographies.
-    * *[Image of Stacked Bar Chart: Fuel Mix within Each Water Stress Category]*
+      
+     *![Image of Stacked Bar Chart: Fuel Mix within Each Water Stress Category](images/chart3.png)*
 
 * **Insight 4: Future water risk is highly dependent on the climate and socioeconomic path taken.**
     * A comparative analysis of the baseline against three 2050 scenarios revealed a range of potential outcomes. The Pessimistic scenario projects a severe increase in the capacity under "Extremely High" stress, while the Optimistic scenario shows a path to significant risk reduction.
-    * *[Image of Faceted Bar Chart: Power Plant Capacity Exposure to Water Stress: Baseline vs. 2050 Scenarios]*
+      
+ *![A bar chart comparing different fuel types and their water risks scenarios](images/insight4.png)*
 
 ## Description of Dashboard
 
@@ -55,7 +59,8 @@ To make these findings accessible, an interactive dashboard was created in Looke
     3.  **Supporting Charts:** A series of bar charts provide deeper context on risk distribution by fuel type and across future scenarios.
     4.  **Global Filters:** Interactive dropdown filters for `Country` and `Primary Fuel` allow users to drill down into the data, updating all visuals on the dashboard simultaneously.
 
-*[Screenshot of the Final Looker Studio Dashboard]*
+ *![A screenshot of the final Looker dashboard](images/Water_Risk_Dashboard.png)*
+
 
 ## Challenges and Solutions
 
