@@ -42,3 +42,5 @@ The project followed a structured data analysis workflow within a Python environ
 
 * **/deliverables/**: Contains the `.ipynb` notebook files for the Data Curation and EDA deliverables.
 * **Final Interactive Dashboard:** [View the Dashboard on Looker Studio](https://lookerstudio.google.com/reporting/db75b288-9c6b-4b15-8dd8-f35e03fd3b10)
+*  **Final Report:**
+ https://github.com/theouterlimitz/global-power-plant-database/blob/master/reports/Final_Report.md
