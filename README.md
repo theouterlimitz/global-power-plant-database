@@ -6,13 +6,6 @@ This repository hosts the work for my Data Science Capstone project. The primary
 
 This repository is a fork of the World Resources Institute's (WRI) [Global Power Plant Database](https://github.com/wri/global-power-plant-database).
 
-## Project Status (As of June 2025)
-
-* [x] **Project Description & Scoping:** Complete & Submitted
-* [x] **Data Curation:** Complete & Submitted
-* [ ] **Exploratory Data Analysis (EDA) Deliverable:** In Progress
-* [ ] **Datafolio & Dashboard:** In Progress
-* [ ] **Final Report:** Not Started
 
 ## Key Findings from Exploratory Data Analysis
 
