@@ -50,7 +50,7 @@ The EDA phase focused on answering key questions about the distribution and natu
 
 ## Description of Dashboard
 
-To make these findings accessible, an interactive dashboard was created in [Looker Studio](https://lookerstudio.google.com/reporting/db75b288-9c6b-4b15-8dd8-f35e03fd3b10.)
+To make these findings accessible, an interactive dashboard was created in [Looker Studio](https://lookerstudio.google.com/reporting/db75b288-9c6b-4b15-8dd8-f35e03fd3b10/page/KzLNF)]
 
 * **Use Case:** The dashboard is designed for policymakers, energy sector investors, and researchers to explore the water risk exposure of global power plants. [cite_start]It allows users to move from a high-level global overview to a more granular view of specific countries or fuel types.
 * **Components and Interaction:**
