@@ -73,18 +73,23 @@ To make these findings accessible, an interactive dashboard was created in [Look
 
 ### Conclusions
 
-[cite_start]This analysis concludes that a substantial portion of global energy capacity, particularly infrastructure reliant on fossil fuels like coal and gas, is located in regions with high to extreme baseline water stress. The geographic hotspots for this risk are concentrated in North Africa, the Middle East, India, and Northern China. [cite_start]Furthermore, the future of this risk is highly dependent on the world's climate and socioeconomic pathway; pessimistic scenarios show a severe escalation of risk to energy security, while optimistic scenarios show that mitigation is possible.
+Conclusions and Future Work
 
-### Future Work
+This analysis concludes that a substantial portion of global energy capacity, particularly infrastructure reliant on fossil fuels like coal and gas, is located in regions with high to extreme baseline water stress. The geographic hotspots for this risk are concentrated in North Africa, the Middle East, India, and Northern China. Furthermore, the future of this risk is highly dependent on the world's climate and socioeconomic pathway; pessimistic scenarios show a severe escalation of risk to energy security, while optimistic scenarios show that mitigation is possible.
 
-[cite_start]This project provides a strong foundation that could be expanded in several ways:
+Future Work
+This project provides a strong foundation that could be expanded in several ways:
 
-* **Incorporate Plant-Level Water Usage:** Integrating datasets on specific plant cooling technologies and their water withdrawal rates would allow for a more precise risk assessment.
-* **Ownership-Level Analysis:** The analysis could be extended to assess the portfolio-level water risk for the major companies listed in the `owner` field.
-* **Analyze Additional Risks:** Future work could create a more holistic risk score by incorporating the flood risk, drought risk, and water quality indicators available in the Aqueduct 4.0 dataset.
+Incorporate Plant-Level Water Usage: Integrating datasets on specific plant cooling technologies and their water withdrawal rates would allow for a more precise risk assessment.
 
-## References & Acknowledgements
+Ownership-Level Analysis: The analysis could be extended to assess the portfolio-level water risk for the major companies listed in the owner field.
 
-* [cite_start]The core datasets for this project were provided by the **World Resources Institute (WRI)** and are available under a Creative Commons (CC BY 4.0) license.
-* **Suggested Citation for Aqueduct 4.0 Data:** Kuzma, S., M.F.P. Bierkens, S. Lakshman, T. Luo, L. Saccoccia, E. H. Sutanudjaja, and R. Van Beek. 2023. “Aqueduct 4.0: Updated decision-relevant global water risk indicators.” Technical Note. [cite_start]Washington, DC: World Resources Institute.
-* The world map baselayer was sourced from **Natural Earth Data**.
+Analyze Additional Risks: Future work could create a more holistic risk score by incorporating the flood risk, drought risk, and water quality indicators available in the Aqueduct 4.0 dataset.
+
+References & Acknowledgements
+
+The core datasets for this project were provided by the World Resources Institute (WRI) and are available under a Creative Commons (CC BY 4.0) license.
+
+Suggested Citation for Aqueduct 4.0 Data: Kuzma, S., M.F.P. Bierkens, S. Lakshman, T. Luo, L. Saccoccia, E. H. Sutanudjaja, and R. Van Beek. 2023. “Aqueduct 4.0: Updated decision-relevant global water risk indicators.” Technical Note. Washington, DC: World Resources Institute.
+
+The world map baselayer was sourced from Natural Earth Data.
